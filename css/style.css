@@ -1,0 +1,352 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*=========================
+header(home)
+===========================*/
+.home{
+  display: flex;
+  height: 80vh;
+  position: relative;
+}
+.home > article{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0, 0, 0, 0.6) ;
+}
+video{
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+     position: absolute;
+}
+h1{
+  text-transform: capitalize;
+  font-size: 45px;
+  color: whitesmoke;
+}
+header h3{
+  text-transform: capitalize;
+  font-size: 25px;
+  font-style: italic;
+  color: whitesmoke;
+  text-align: center;
+}
+/*=========================
+header(about)
+===========================*/
+.about{
+  background-image: url(/img/header-pic.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about > article{
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px black;
+}
+/*=========================
+header(table)
+===========================*/
+.table{
+  background-color: saddlebrown;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*=========================
+header(contact)
+===========================*/
+.contact{
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact > article{
+  border: 5px solid peru;
+  border-style: dashed;
+  padding: 13% 30%;
+}
+.contact h1{
+  color: saddlebrown;
+}
+.contact h3{
+  color: darkgoldenrod;
+}
+/*=========================
+nav
+===========================*/
+nav{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+ul{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+li{
+  display: flex;
+  list-style-type: none;
+  padding: 2%;
+}
+nav a{
+  color: whitesmoke;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .4s;
+}
+nav a:hover{
+  border-bottom: 2px solid whitesmoke;
+}
+/*=========================
+section-top(home)
+===========================*/
+.top{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 8vh;
+  text-align: center;
+
+}
+.top > h2{
+  padding-top: 5%;
+}
+h2{
+  font-size: 25px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.top p{
+  width: 80%;
+  line-height: 1.5;
+}
+
+/*=========================
+section-center(home)
+===========================*/
+.center h2{
+  text-align: center;
+}
+.center{
+  padding: 8% 0;
+}
+.center > section{
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+}
+.center article{
+  width: 80%;
+  display: flex;
+  -moz-column-gap: 5vw;
+       column-gap: 5vw;
+}
+.center img{
+  width: 23vw;
+  height: 25vh;
+}
+.center figure{
+  display: flex;
+  flex-direction: column;
+  row-gap: 3vh;
+}
+.center figcaption{
+  display: flex;
+  flex-direction: column;
+  row-gap: 3vh
+}
+.center p{
+  text-align: justify;
+
+}
+/*=========================
+section.bottom(home)
+===========================*/
+.bottom{
+  background-color:lightgray;
+  display: flex;
+  justify-content: center;
+  padding: 8% 0;
+}
+.bottom > section{
+  width: 80%;
+  display: flex;
+  -moz-column-gap: 10vh;
+       column-gap: 10vh;
+}
+.left{
+  display: flex;
+  flex-direction: column;
+  row-gap: 6vh;
+}
+.bottom p{
+  line-height: 1.5;
+  text-align: justify;
+}
+/*=========================
+section.about-us(about)
+===========================*/
+.about-us{
+  display: flex;
+  justify-content: center;
+  padding: 8% 0;
+}
+.about-us > section{
+  width: 80%;
+  display: flex;
+  -moz-column-gap: 10vw;
+       column-gap: 10vw;
+}
+.about-us article{
+  display: flex;
+  flex-direction: column;
+  row-gap: 3vh;
+}
+.about-us figure{
+  display: flex;
+  flex-direction: column;
+  row-gap: 3vh;
+  align-items: center;
+}
+.about-us img{
+  width: 15vw;
+}
+.about-us figcaption{
+  text-align: justify;
+}
+/*=========================
+section.food-menu(table)
+===========================*/
+.food-menu{
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+  padding-bottom: 30%;
+}
+table{
+  width: 80%;
+  border-collapse: collapse;
+}
+caption{
+  font-weight: 600;
+  font-size: 25px;
+  text-transform: capitalize;
+  text-align: center;
+  padding-bottom: 5%;
+}
+table th{
+  text-transform: capitalize;
+  font-size: 20px;
+  text-align: left;
+}
+table td{
+  padding: 2% 0;
+  text-align: left;
+}
+tbody{
+  border-top: 5px solid peru;
+  border-bottom: 5px solid peru;
+}
+tbody > tr:nth-child(odd){
+  background-color:blanchedalmond;
+}
+tfoot{
+  background-color: burlywood;
+}
+tfoot td{
+  text-align: center;
+}
+/*=========================
+section.reservation(contact)
+===========================*/
+.reservation{
+  display: flex;
+  justify-content: center;
+  padding: 8% 0;
+}
+form{
+  width: 70%;
+  background-color: blanchedalmond;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10vh;
+  align-items: center;
+  padding-bottom: 5%;
+  box-shadow:3px 3px 5px gray ;
+
+}
+fieldset{
+  width: 80%;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5vh;
+
+}
+legend{
+  padding: 5% 0;
+  font-size: 30px;
+}
+fieldset > aside{
+  display: flex;
+  flex-direction: column;
+}
+form span{
+  color: red;
+}
+input, select{
+  padding: 1%;
+}
+form > article{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 5vw;
+       column-gap: 5vw;
+}
+.type{
+  row-gap: 2vw;
+}
+form > article > input{
+  padding: 1% 2%;
+  background-color:peru;
+  border: 2px dashed whitesmoke;
+  color: whitesmoke;
+  box-shadow: 0 0 0 5px peru;
+}
+form > article > input:hover{
+  cursor: pointer;
+}
+
+/*=========================
+footer
+===========================*/
+footer{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+}
+footer p{
+  color: whitesmoke;
+}

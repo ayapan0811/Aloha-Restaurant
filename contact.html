@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aloha Kitchen</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <header class="contact">
+    <article>
+      <h1>aloha kitchen</h1>
+      <h3>hawaiian food</h3>
+    </article>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="/index.html">home</a></li>
+      <li><a href="/about.html">about</a></li>
+      <li><a href="/table.html">table</a></li>
+      <li><a href="/contact.html">contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="reservation">
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Reservation</legend>
+          <aside>
+            <label for="name">Name <span>*</span></label>
+            <input type="text" name="name" id="name" placeholder="Name" required>
+          </aside>
+          <aside>
+            <label for="email">Email <span>*</span></label>
+            <input type="text" name="email" id="email" placeholder="Email" required>
+          </aside>
+          <aside>
+            <label for="phone">Phone number <span>*</span></label>
+            <input type="text" name="phone" id="phone" placeholder="Phone number" required>
+          </aside>
+          <aside>
+            <label for="phone-2">Phone-2</label>
+            <input type="number" name="phone-2" id="phone-2" placeholder="Phone-2">
+          </aside>
+          <aside>
+            <label for="gest">Number of gest <span>*</span></label>
+            <select name="gest" id="gest">
+              <option value="1">1 people</option>
+              <option value="2">2 people</option>
+              <option value="3">3 people</option>
+              <option value="4">4 people</option>
+              <option value="5">5 people</option>
+              <option value="6">6 people</option>
+              <option value="7">7 people</option>
+              <option value="8">8 people</option>
+              <option value="9">9 people</option>
+              <option value="10">10 people</option>
+            </select>
+          </aside>
+          <aside>
+            <label for="date">Date <span>*</span></label>
+            <input type="date" name="date" id="date" placeholder="Select Date" required>
+          </aside>
+          <aside>
+            <label for="time">Time</label>
+            <input type="time" name="time" id="time">
+          </aside>
+          <aside>
+            <label for="course-menu">Select course-menu</label>
+            <select name="course-menu" id="course-menu">
+              <option value="none" disabled selected>Select a course</option>
+              <optgroup label="Lunch">
+                <option value="a">A course</option>
+                <option value="b">B course</option>
+                <option value="c">C course</option>
+                <option value="d">D course</option>
+              </optgroup>
+              <optgroup label="Dinner">
+                <option value="a">A course</option>
+                <option value="b">B course</option>
+                <option value="c">C course</option>
+                <option value="d">D course</option>
+              </optgroup>
+            </select>
+          </aside>
+          <aside class="type">
+            <label for="table-type">Type of table</label>
+            <label for="window"><input type="radio" name="window" id="window" value="window">By the window</label>
+            <label for="terrace"><input type="radio" name="terrace" id="terrace">Terrace</label>
+            <label for="private"><input type="radio" name="private" id="private">Private room</label>
+          </aside>
+          <aside>
+            <label for="request">Request</label>
+            <textarea name="request" id="request" cols="30" rows="10"></textarea>
+          </aside>
+        </fieldset>
+        <article>
+          <input type="submit" value="Book">
+          <input type="reset" value="clean">
+        </article>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>copy right &copy; Aloha Kitchen</p>
+  </footer>
+
+</body>
+</html>
+
